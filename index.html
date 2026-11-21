@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Arc Solutions Learning Page</h1>
+        <p>Welcome to my HTML learning website! Explore the lessons and register below.</p>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Part 2 & 3: Student Registration Form -->
+        <section>
+            <h2>Student Registration</h2>
+            <form action="#" method="get">
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+
+                <!-- Student challenge: added Student Number field -->
+                <label for="studentnumber">Student Number:</label>
+                <input type="text" id="studentnumber" name="studentnumber" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+
+                <label for="course">Choose Your Course:</label>
+                <select id="course" name="course">
+                    <option value="BSIT">BS Information Technology</option>
+                    <option value="BSCS">BS Computer Science</option>
+                    <option value="BSIS">BS Information Systems</option>
+                    <!-- Student challenge: added another course option -->
+                    <option value="BSEMC">BS Entertainment and Multimedia Computing</option>
+                </select>
+                <br><br>
+
+                <p>Preferred Learning Method:</p>
+                <input type="radio" id="video" name="method" value="video">
+                <label for="video">Video</label>
+                <input type="radio" id="reading" name="method" value="reading">
+                <label for="reading">Reading</label>
+                <br><br>
+
+                <p>Topics of Interest:</p>
+                <input type="checkbox" id="html" name="interest" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="interest" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="interest" value="JavaScript">
+                <label for="js">JavaScript</label>
+                <!-- Student challenge: added another topic of interest -->
+                <input type="checkbox" id="python" name="interest" value="Python">
+                <label for="python">Python</label>
+                <br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="35"></textarea>
+                <br><br>
+
+                <button type="submit">Register</button>
+                <button type="reset">Clear</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Part 4: Audio Lesson -->
+        <section>
+            <h2>Listen to the Lesson</h2>
+            <p>Listen to the audio lesson below.</p>
+            <audio controls>
+                <source src="media/lesson.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+            <br><br>
+
+            <!-- Student challenge: second audio player -->
+            <p>Supplementary recording:</p>
+            <audio controls>
+                <source src="media/lesson2.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <hr>
+
+        <!-- Part 5: Video Lesson -->
+        <section>
+            <h2>Watch the Lesson</h2>
+            <p>Watch the instructional video below.</p>
+            <!-- Student challenge: width changed from 480 to 600 -->
+            <video width="600" controls>
+                <source src="media/lesson.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Arc Solutions Learning Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
